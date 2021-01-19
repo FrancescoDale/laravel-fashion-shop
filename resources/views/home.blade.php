@@ -7,10 +7,10 @@
             @foreach ($dresses as $dress)
                 <div class="mt-4">
                     <h4 class="text-uppercase">prodotto {{ $dress->id}}</h4>
-                    <p>{{ $dress->fabric }}</p>
-                    <p>{{ $dress->size }}</p>
-                    <p>{{ $dress->color }}</p>
-                    <p>{{ $dress->price }} €</p>
+                    <p>tessuto : {{ $dress->fabric }}</p>
+                    <p>taglia : {{ $dress->size }}</p>
+                    <p>colore : {{ $dress->color }}</p>
+                    <p>prezzo : {{ $dress->price }} €</p>
 
                 </div>
             @endforeach
