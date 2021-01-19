@@ -9,8 +9,11 @@ class HomeController extends Controller
 {
     public function index() {
         $dress_list = Dress::all();
-        dd($dress_list);
-        return view('home', $dress_list);
+        $data = [
+            'dresses' => $dress_list
+        ];
+        // dd($dress_list);
+        return view('home', $data);
     }
 
     public function test() {
